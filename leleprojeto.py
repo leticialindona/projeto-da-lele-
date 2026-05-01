@@ -23,7 +23,7 @@ if nome:
 
     h1 {
       color: purple;
-      font-size: 40px;
+      font-size: 40;
     }
 
     p {
