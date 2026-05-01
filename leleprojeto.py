@@ -27,17 +27,17 @@ if nome:
     }
 
     p {
-      font-size: 18px;
+      font-size: 18;
     }
 
     button {
-      padding: 12px 20px;
+      padding: 12 20;
       background-color: pink;
       border: none;
-      border-radius: 8px;
+      border-radius: 8;
       cursor: pointer;
-      font-size: 16px;
-      margin-top: 20px;
+      font-size: 16;
+      margin-top: 20;
     }
 
     button:hover {
@@ -45,7 +45,7 @@ if nome:
     }
 
     #curiosidade {
-      margin-top: 20px;
+      margin-top: 20;
       font-weight: bold;
       color: #5a005a;
     }
