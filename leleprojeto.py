@@ -18,7 +18,7 @@ if nome:
       font-family: Arial, sans-serif;
       background: linear-gradient(to right, #ffe6f0, #e6ccff);
       margin: 0;
-      padding: 40px;
+      padding: 
     }
 
     h1 {
