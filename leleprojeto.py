@@ -6,68 +6,51 @@ st.image("https://github.com/leticialindona/projeto-da-lele-/blob/main/download.
 nome = st.text_input('Digite o seu nome')
 if nome:
   st.write(nome, 'é muito legal e feliz, ele(a) gosta de unicórnios')
+import streamlit as st
+import random
 
+# Configuração da página
+st.set_page_config(page_title="Projeto da Lele 🦄", layout="centered")
+
+# Estilo (equivalente ao CSS)
+st.markdown("""
+    <style>
     body {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #ffe6f0, #e6ccff);
-      margin: 0;
-      padding: 
-    {
-
-    h1 {
-      color: purple;
-      font-size: 40;
+        background: linear-gradient(to right, #ffe6f0, #e6ccff);
     }
-
-    p {
-      font-size: 18;
+    .titulo {
+        text-align: center;
+        color: purple;
+        font-size: 40px;
     }
-
-    button {
-      padding: 12 20;
-      background-color: pink;
-      border: none;
-      border-radius: 8;
-      cursor: pointer;
-      font-size: 16;
-      margin-top: 20;
+    .texto {
+        text-align: center;
+        font-size: 18px;
     }
+    </style>
+""", unsafe_allow_html=True)
 
-    button:hover {
-      background-color: #ffb3d9;
-    }
+# Título (equivalente ao <h1>)
+st.markdown('<p class="titulo">🦄 Mundo dos Unicórnios</p>', unsafe_allow_html=True)
 
-    #curiosidade {
-      margin-top: 20;
-      font-weight: bold;
-      color: #5a005a;
-    }
-  </style>
-</head>
+# Texto
+st.markdown('<p class="texto">Descubra curiosidades mágicas sobre unicórnios!</p>', unsafe_allow_html=True)
 
-<body>
+# Lista de curiosidades (igual ao JS)
+curiosidades = [
+    "Unicórnios aparecem em mitologias antigas da Índia e da China.",
+    "Na Idade Média, acreditava-se que seus chifres tinham poderes mágicos.",
+    "O unicórnio é o animal nacional da Escócia.",
+    "Eles simbolizam pureza e força."
+]
 
-  <h1>Mundo dos Unicórnios</h1>
-  <p>Descubra curiosidades mágicas sobre unicórnios!</p>
+# Botão (equivalente ao onclick)
+if st.button("✨ Revelar curiosidade"):
+    curiosidade = random.choice(curiosidades)
+    st.success(curiosidade)
+    st.balloons()
 
-  <button onclick="mostrarCuriosidade()"> Revelar curiosidade</button>
 
-  <p id="curiosidade"></p>
 
-  <script>
-    const curiosidades = [
-      "Unicórnios aparecem em mitologias antigas da Índia e da China.",
-      "Na Idade Média, acreditava-se que seus chifres tinham poderes mágicos.",
-      "O unicórnio é o animal nacional da Escócia.",
-      "Eles simbolizam pureza e força."
-    ];
-
-    function mostrarCuriosidade() {
-      const aleatorio = Math.floor(Math.random() * curiosidades.length);
-      document.getElementById("curiosidade").innerText = curiosidades[aleatorio];
-    }
-  </script>
-
-</body>
-</html>
+pip install streamlit
+streamlit run leleprojeto.py
