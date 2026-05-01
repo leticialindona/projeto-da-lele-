@@ -57,7 +57,7 @@ if nome:
   <h1>Mundo dos Unicórnios</h1>
   <p>Descubra curiosidades mágicas sobre unicórnios!</p>
 
-  <button onclick="mostrarCuriosidade()">✨ Revelar curiosidade</button>
+  <button onclick="mostrarCuriosidade()"> Revelar curiosidade</button>
 
   <p id="curiosidade"></p>
 
