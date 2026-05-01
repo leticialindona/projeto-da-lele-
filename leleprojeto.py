@@ -6,7 +6,6 @@ st.image("https://github.com/leticialindona/projeto-da-lele-/blob/main/download.
 nome = st.text_input('Digite o seu nome')
 if nome:
   st.write(nome, 'é muito legal e feliz, ele(a) gosta de unicórnios')
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
