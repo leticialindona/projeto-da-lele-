@@ -10,7 +10,7 @@ if nome:
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Projeto da Lele 🦄</title>
+  <title>Projeto da Lele </title>
 
   <style>
     body {
@@ -54,7 +54,7 @@ if nome:
 
 <body>
 
-  <h1>🦄 Mundo dos Unicórnios</h1>
+  <h1>Mundo dos Unicórnios</h1>
   <p>Descubra curiosidades mágicas sobre unicórnios!</p>
 
   <button onclick="mostrarCuriosidade()">✨ Revelar curiosidade</button>
