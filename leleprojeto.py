@@ -5,4 +5,4 @@ st.write("a lele gosta de unicornios")
 st.image("https://github.com/leticialindona/projeto-da-lele-/blob/main/download.jpg?raw=true")
 nome = st.text_input('Digite o seu nome')
 if nome:
-  st.write(nome, 'é muito legal e feliz')
+  st.write(nome, 'é muito legal e feliz, ele(a) gosta de unicórnios')
