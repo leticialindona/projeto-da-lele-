@@ -19,7 +19,7 @@ if nome:
       background: linear-gradient(to right, #ffe6f0, #e6ccff);
       margin: 0;
       padding: 
-    }
+    {
 
     h1 {
       color: purple;
